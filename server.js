@@ -21,15 +21,16 @@ var articleone={
    
             <p>
                 This is my First content for my first article
-            </p>
-      '
+            </p>`
+     
 };
 function createTemplate(data)
 {
     var title=data.title;
     var heading=data.heading;
+    var date=data.date;
     var content=data.content;
-    var htmltemplate={ '<html>
+    var htmltemplate= `<html>
     <head>
         <title>
            ${title}
@@ -55,7 +56,8 @@ function createTemplate(data)
         </div>
         
         </div>
-        </html>';
+        </body>
+        </html>`;
   return htmltemplate;
 }
 

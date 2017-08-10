@@ -3,8 +3,8 @@ var morgan = require('morgan');
 var path = require('path');
 
 var app = express();
-
-var articleone={
+var articles={ 
+    articleone:{
     title: 'Article-one/Anitha',
     heading: 'Article One',
     date: 'August 10,2017',
@@ -23,6 +23,43 @@ var articleone={
                 This is my First content for my first article
             </p>`
      
+},
+    articletwo:{title: 'Article-two/Anitha',
+    heading: 'Article Two',
+    date: 'August 11,2017',
+    content:`
+            <p>
+                This is my First content for my second article
+            </p>
+     
+      
+            <p>
+                This is my First content for my second article
+            </p>
+    
+   
+            <p>
+                This is my First content for my second article
+            </p>`
+     },
+    articlethree:{title: 'Article-Three/Anitha',
+    heading: 'Article Three',
+    date: 'August 12,2017',
+    content:`
+            <p>
+                This is my First content for my Third article
+            </p>
+     
+      
+            <p>
+                This is my First content for my Third article
+            </p>
+    
+   
+            <p>
+                This is my First content for my Third article
+            </p>`
+     }
 };
 function createTemplate(data)
 {
@@ -69,8 +106,9 @@ app.get('/', function (req, res) {
 });
 
 
-app.get('/article-one',function(req,res)
-{res.send( createTemplate(articleone));
+app.get('/articleName',function(req,res){
+var articleName=req.param.articleName;
+res.send( createTemplate(articles(articleName)));
 });
 
 app.get('/article-two',function(req,res)

@@ -1,18 +1,10 @@
 console.log('Loaded!');
 
-var element= document.getElementById('main-text');
-element.innerHTML ='New value';
-
-var img = document.getElementById('madi');
-//var marginleft=0;
-//function moveRight()
-//{
-//    marginleft=marginleft+10;
-//    img.style.marginleft=marginleft + 'px' ;
-//}
-
-img.onclick=function()
+var button= document.getElementById('counter');
+var counter=0;
+button.onclick=function()
 {
-    img.style.marginleft='100px';
-//var interval=setInterval(moveRight, 100);
+    counter=conter+1;
+    var span=document.getElementById('count');
+    span.innerHTML=counter.toString();
 };

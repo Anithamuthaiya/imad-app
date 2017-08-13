@@ -3,7 +3,7 @@ console.log('Loaded!');
 var element= document.getElementById('main-text');
 element.innerHTML ='New value';
 
-//var img = document.getElementById('madi');
+var img = document.getElementById('madi');
 //var marginleft=0;
 //function moveRight()
 //{
@@ -13,6 +13,6 @@ element.innerHTML ='New value';
 
 img.onclick=function()
 {
-    img.style.marginleft="100px";
+    img.style.marginleft='100px';
 //var interval=setInterval(moveRight, 100);
 };

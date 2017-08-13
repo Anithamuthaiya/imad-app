@@ -13,6 +13,6 @@ element.innerHTML ='New value';
 
 img.onclick=function()
 {
-    img.style.marginleft='100px';
+    img.style.marginleft="100px";
 //var interval=setInterval(moveRight, 100);
 };

@@ -3,7 +3,7 @@ console.log('Loaded!');
 var element= document.getElementById('main-text');
 element.innerHTML ='New value';
 
-var img = document.getElementById('modi');
+var img = document.getElementById('madi');
 var marginleft=0;
 function moveRight()
 {

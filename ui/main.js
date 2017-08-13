@@ -5,10 +5,13 @@ element.innerHTML ='New value';
 
 var img = document.getElementById('modi');
 var marginleft=0;
-function moveRight(){
+function moveRight()
+{
     marginleft=marginleft+10;
     img.style.marginleft=marginleft + 'px' ;
 }
-img.onclick=function(){
-var interval=SetInterval(moveRight,100);
+
+img.onclick=function()
+{
+var interval=setInterval(moveRight, 100);
 }

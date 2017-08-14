@@ -64,10 +64,10 @@ var articles={
      },
      'article-counter':{
        title: 'counter/Anitha',
-    heading: 'counter'',
+    heading: 'counter',
     date: 'August 12,2017',
-    content:
-            }
+    
+     }  
 };
 };
 function createTemplate(data)

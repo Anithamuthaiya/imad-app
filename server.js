@@ -61,7 +61,14 @@ var articles={
             <p>
                 This is my First content for my Third article
             </p>`
-     }
+     },
+     'article-counter':{
+       title: 'counter/Anitha',
+    heading: 'counter'',
+    date: 'August 12,2017',
+    content:
+            }
+};
 };
 function createTemplate(data)
 {

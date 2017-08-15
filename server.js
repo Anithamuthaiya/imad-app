@@ -64,7 +64,7 @@ var articles={
      }
      'counter':{
          title:'counter/Anitha',
-         heading:'counter'
+   
      }
       
 };

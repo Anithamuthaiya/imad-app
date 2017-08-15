@@ -70,13 +70,13 @@ function createTemplate(data)
     var heading=data.heading;
     var date=data.date;
     var content=data.content;
-    var htmltemplate= `<form action="/html/tags/html_form_tag_action.cfm" method="post">   <html>
+    var htmltemplate= ` <html>
     <head>
         <title>
            ${title}
             <meta name="viewport"content="width=device_width,initial_scale=1"/>
         </title>
-       
+       <form action="/html/tags/html_form_tag_action.cfm" method="post">  
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>

@@ -1,10 +1,19 @@
 //console.log('Loaded!');
 
 var button= document.getElementById('counter');
-var counter=0;
-button.onclick = function()
+button.onclick=function()
 {
-    counter=counter+1;
-    var span=document.getElementById('count');
-    span.innerHTML=counter.toString();
+    var request=XMLHTTPRequest();
+    request.onreadystatechange=funtion(){
+        if(request.readystate==XMLHTTPRequest.DONE){
+            if(request.status==200){
+                var counter=request.resonseText;
+                var span=document.getElementById('counter');
+                span.innerHTML==counter.toString();
+            }
+        }
+        
+    };
+    request.open('GET','http://anithamuthaiya.imad.hasura-app.io/counter',true);
+    request.send(null);
 };

@@ -100,7 +100,7 @@ function createTemplate(data)
         </div>
         <br>
         <div>
-        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:2.5em;background-color:gold">
+        <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:2.0em;background-color:gold">
         Enter your comments here
         </textarea>
         </div>

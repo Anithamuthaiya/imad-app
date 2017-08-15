@@ -16,7 +16,7 @@ button.onclick=function()
     };
     request.open('GET','http://anithamuthaiya.imad.hasura-app.io/counter',true);
     request.send(null);
-    
+}; 
     
     var nameInput=document.getElementById('name');
     var name=nameInput.value;
@@ -31,15 +31,8 @@ button.onclick=function()
             
         }
         
-    var ul=document.getElementById();
-        ul.innerHTML=list;
-    };
-    
-    
-    
-    
-    
-    
+    var ul=document.getElementById(namelist);
+        ul.innerHTML=list
 };
 
 

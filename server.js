@@ -114,7 +114,7 @@ app.get('/counter',function(req,res) {
     res.send(counter.toString());
 });
 
-app.get('/submit/:name', function(req ,res){
+app.get('/submit-name/:name', function(req ,res){
     var name=get.params.name;
     names.push(name);
     

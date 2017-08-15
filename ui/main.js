@@ -25,12 +25,13 @@ button.onclick=function()
     {
         var names=['name1','name2','name3','name4'];
         var list='';
-        for(i=0;i<names.length;<i++)
+        for(var i=0;i<names.length;<i++)
         {
-            list+=<li>+name[1]+</li>;
+            list+='<li>'+name[1]+'</li>';
             
         }
-        var ul=document.getElementById('namelist');
+        
+    var ul=document.getElementById();
         ul.innerHTML=list;
     };
     

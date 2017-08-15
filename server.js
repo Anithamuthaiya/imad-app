@@ -94,12 +94,13 @@ function createTemplate(data)
         <div>
             ${content}
         </div>
-        <input type="text" id="name" placeholder="name">
+        <input type="text" id="name" placeholder="">
         </input>
+        <br>
         <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;background-color:gold">
         Enter your comments here
         </textarea>
-       
+       </br>
         <input type="submit" value="Submit">
          </div>
         </form>

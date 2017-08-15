@@ -76,7 +76,7 @@ function createTemplate(data)
            ${title}
             <meta name="viewport"content="width=device_width,initial_scale=1"/>
         </title>
-       <form action="/html/tags/html_form_tag_action.cfm" method="post">  
+       <form action='http://anithamuthaiya.imad.hasura-app.io/submit?comment=' method="post">  
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>

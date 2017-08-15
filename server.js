@@ -97,7 +97,7 @@ function createTemplate(data)
         <div>
         <label for="text"> enter your name </label>
         <div>
-        <input type="text" id="name" placeholder=""; background-color:gold>
+        <input type="text" id="name" placeholder=""; "background-color:gold">
         </input>
         </div>
         <br>

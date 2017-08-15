@@ -76,7 +76,7 @@ function createTemplate(data)
            ${title}
             <meta name="viewport"content="width=device_width,initial_scale=1"/>
         </title>
-       <form action='http://anithamuthaiya.imad.hasura-app.io/submit?comment=' method="post">  
+     // <form action='http://anithamuthaiya.imad.hasura-app.io/comment-name=' method="post">  
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -113,7 +113,7 @@ function createTemplate(data)
          <div>
          <ul id="namelist"></ul>
          </div>
-        </form>
+       // </form>
 </body>
  </html>`;
   

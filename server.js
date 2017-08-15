@@ -96,34 +96,9 @@ function createTemplate(data)
         </div>
         
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div>
-<div>
-<div>
 <div>
 <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;background-color:gold">
-Hey... say something
+Enter your comments here
 </textarea>
 </div>
 <input type="submit" value="Submit">

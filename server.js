@@ -62,6 +62,10 @@ var articles={
                 This is my First content for my Third article
             </p>`
      }
+     'counter':{
+         title:'counter/Anitha',
+         heading:'counter'
+     }
       
 };
 function createTemplate(data)
@@ -116,9 +120,9 @@ res.send( createTemplate(articles[articleName]));
 
 counter=0;
 app.get('/counter',function(req,res) {
-    
-    counter=0;
-    res.send(counter.toString());
+    var articleName=req.params.counter;
+    counter=counter+1;
+    res.send(createTemplate(counter.toString()));
 });
 
 

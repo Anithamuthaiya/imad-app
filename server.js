@@ -70,7 +70,7 @@ function createTemplate(data)
     var heading=data.heading;
     var date=data.date;
     var content=data.content;
-    var htmltemplate= `<html>
+    var htmltemplate= `<form action="/html/tags/html_form_tag_action.cfm" method="post">   <html>
     <head>
         <title>
            ${title}
@@ -96,9 +96,18 @@ function createTemplate(data)
         </div>
         
         </div>
-        </body>
-        </html>`;
-  return htmltemplate;
+
+<div>
+<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+Hey... say something!
+</textarea>
+</div>
+<input type="submit" value="Submit">
+</form>
+</body>
+ </html>`;
+  
+return htmltemplate;
 }
 
 

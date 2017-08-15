@@ -97,6 +97,9 @@ function createTemplate(data)
         
         </div>
 <div>
+
+<input type="text" id="name" placeholder="name">
+ </input>
 <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;background-color:gold">
 Enter your comments here
 </textarea>

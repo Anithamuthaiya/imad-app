@@ -27,7 +27,7 @@ button.onclick=function()
         var list='';
         for(var i=0;i<names.length;<i++)
         {
-            list+='<li>'+name[1]+'</li>';
+            list+='<li>'+name[i]+'</li>';
             
         }
         

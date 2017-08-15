@@ -110,6 +110,9 @@ function createTemplate(data)
        </br>
         <input type="submit" value="Submit">
          </div>
+         <div>
+         <ul id="namelist"></ul>
+         </div>
         </form>
 </body>
  </html>`;

@@ -59,11 +59,11 @@ submit.onclick=function()
         if(request.readyState===XMLHttpRequest.DONE){
             if(request.status===200){
                 var comment=request.responseText;
-                comments=JSON.parse(comments);
+                comment=JSON.parse(comment);
                  var list='';
-                 for(var i=0; i<comments.length; i++)
+                 for(var i=0; i<comment.length; i++)
         {
-            list += '<li>'+comments[i]+ '</li>';
+            list += '<li>'+comment[i]+ '</li>';
             
         }
         

@@ -58,16 +58,16 @@ submit.onclick=function()
     request.onreadystatechange=function(){
         if(request.readyState===XMLHttpRequest.DONE){
             if(request.status===200){
-                var comment=request.responseText;
-                comment=JSON.parse(comment);
+                var name=request.responseText;
+                name=JSON.parse(name);
                  var list='';
-                 for(var i=0; i<comment.length; i++)
+                 for(var i=0; i<name.length; i++)
         {
-            list += '<li>'+comment[i]+ '</li>';
+            list += '<li>'+name[i]+ '</li>';
             
         }
         
-          ul =document.getElementById('commentlist');
+          ul =document.getElementById('namelist');
             ul.innerHTML=list;
     
                
@@ -75,9 +75,9 @@ submit.onclick=function()
         }
         
     };
-    var commentInput=document.getElementById('comment');
-    var comment=commentInput.value;
-    request.open('GET','http://anithamuthaiya.imad.hasura-app.io/comment-name?name='+comment ,true);
+    var nameInput=document.getElementById('name');
+    var name=nameInput.value;
+    request.open('GET','http://anithamuthaiya.imad.hasura-app.io/comment-name?name='+name ,true);
     request.send(null);
 }; 
     

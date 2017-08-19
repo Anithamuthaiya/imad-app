@@ -111,9 +111,11 @@ function createTemplate(data)
         <input type="submit" value="Submit">
          </div>
          <div>
-         <ul id="namelist"></ul>
+         <ul id="commentlist"></ul>
          </div>
        // </form>
+        <script type="text/javascript" src="/ui/main.js">  </script>
+    </body>
 </body>
  </html>`;
   

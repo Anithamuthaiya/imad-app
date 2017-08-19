@@ -67,9 +67,6 @@ submit.onclick=function()
             
         }
         
-        var ul =document.getElementById('namelist');
-            ul.innerHTML=list;
-            
           ul =document.getElementById('commentlist');
             ul.innerHTML=list;
     

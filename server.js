@@ -108,7 +108,7 @@ function createTemplate(data)
         </textarea>
         </div>
        </br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id=submit_btn>
          </div>
          <div>
          <ul id="commentlist"></ul>

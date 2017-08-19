@@ -19,6 +19,38 @@ button.onclick=function()
 }; 
     
   
+  
+  
+   
+    var submit=document.getElementById('submit_btn');
+submit.onclick=function()
+{
+    var request= new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE){
+            if(request.status===200){
+                var name=request.responseText;
+                name=JSON.parse(name);
+                 var list='';
+                 for(var i=0; i<name.length; i++)
+        {
+            list += '<li>'+name[i]+ '</li>';
+            
+        }
+        
+          ul =document.getElementById('namelist');
+            ul.innerHTML=list;
+    
+               
+            }
+        }
+        
+    };
+    var nameInput=document.getElementById('name');
+    var name=nameInput.value;
+    request.open('GET','http://anithamuthaiya.imad.hasura-app.io/submit1-name?name='+name ,true);
+    request.send(null);
+};
     
     var submit=document.getElementById('submit_bn');
 submit.onclick=function()
@@ -50,36 +82,7 @@ submit.onclick=function()
 }; 
     
     
-    
-    var submit=document.getElementById('submit_btn');
-submit.onclick=function()
-{
-    var request= new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE){
-            if(request.status===200){
-                var name=request.responseText;
-                name=JSON.parse(name);
-                 var list='';
-                 for(var i=0; i<name.length; i++)
-        {
-            list += '<li>'+name[i]+ '</li>';
-            
-        }
-        
-          ul =document.getElementById('namelist');
-            ul.innerHTML=list;
-    
-               
-            }
-        }
-        
-    };
-    var nameInput=document.getElementById('name');
-    var name=nameInput.value;
-    request.open('GET','http://anithamuthaiya.imad.hasura-app.io/submit1-name?name='+name ,true);
-    request.send(null);
-}; 
+   
     
   
 

@@ -152,7 +152,7 @@ app.get('/comment-name', function(req,res){
     var name=req.query.name;
     names1.push(name);
     
-res.send(JSON.stringify(names));
+res.send(JSON.stringify(names1));
 });
 
 app.get('/:articleName',function(req,res){

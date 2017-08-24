@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var crypto=require('crypto');
-var bodyParser=require('body.Parser');
+var bodyParser=require('body-parser');
 
 var app = express();
 var articles={ 

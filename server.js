@@ -127,7 +127,7 @@ return htmltemplate;
 
 
 app.use(morgan('combined'));
-app.use(bodyParser.json);
+app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'index.html'));

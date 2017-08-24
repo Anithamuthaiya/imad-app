@@ -15,7 +15,7 @@ var config = {
     password: db-anithamuthaiya-50927
 };
 
-}
+
 var app = express();
 var articles={ 
     'article-one':{

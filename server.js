@@ -1,9 +1,21 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var Pool=require('pg').Pool;
 var crypto=require('crypto');
 var bodyParser=require('body-parser');
 
+
+
+var config = {
+    user:'anithamuthaiya',
+    database:'anithamuthaiya',
+    host:'anithamuthaiya@ssh.imad.hasura-app.io',
+    port:'5432',
+    password: db-anithamuthaiya-50927
+};
+
+}
 var app = express();
 var articles={ 
     'article-one':{

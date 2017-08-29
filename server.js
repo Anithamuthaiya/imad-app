@@ -10,7 +10,7 @@ var bodyParser=require('body-parser');
 var config = {
     user:'anithamuthaiya',
     database:'anithamuthaiya',
-    host:'db.imad.hosura-app.io',
+    host:'db.imad.hasura-app.io',
     port:'5432',
     password:process.env.DB_PASSWORD
 };

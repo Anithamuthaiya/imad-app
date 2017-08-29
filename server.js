@@ -11,7 +11,7 @@ var config = {
     user:'anithamuthaiya',
     database:'anithamuthaiya',
     host:'anithamuthaiya@ssh.imad.hasura-app.io',
-    port:'5432',
+    port:'6482',
     password:'db-anithamuthaiya-50927'
 };
 

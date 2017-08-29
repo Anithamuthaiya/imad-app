@@ -165,10 +165,15 @@ app.post('/create-user',function(req,res)
     pool.query('INSERT INTO "userr" (user,password)VALUES($1,$2)',[username,dbstring],function(err,result)
     {
         if (err){
-            res
+            res.status(500).send(err.toString());
         }
-    })
-})
+        else
+        {
+            res.send('user sucessfully created' +username);
+        }
+        
+    });
+});
 
 counter=0;
 app.get('/counter',function(req,res) {

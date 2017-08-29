@@ -153,8 +153,22 @@ function hash(input,salt){
 app.get('/hash/:input',function(req,res)
 {
     var hashedString=hash(req.params.input,'this-is-some-random-string');
-    res.send(hashedString);
+    s.send(hashedString);
 });
+
+app.post('/create-user',function(req,res)
+{
+    var username=req.body.username;
+    var password=req.body.password;
+    var salt=crypto.randomBytes(128).toString('hex');
+    var dbString=hash(password,salt);
+    pool.query('INSERT INTO "userr" (user,password)VALUES($1,$2)',[username,dbstring],function(err,result)
+    {
+        if (err){
+            res
+        }
+    })
+})
 
 counter=0;
 app.get('/counter',function(req,res) {

@@ -10,13 +10,13 @@ var bodyParser=require('body-parser');
 var config = {
     user:'anithamuthaiya',
     database:'anithamuthaiya',
-    host:'anithamuthaiya@ssh.imad.hasura-app.io',
+    host:'db.imad.hasura-app.io',
     port:'5432',
     password:process.env.DB_PASSWORD
 };
 
 
-//var app = express();
+var app = express();
 var articles={ 
     'article-one':{
     title: 'articleone/Anitha',

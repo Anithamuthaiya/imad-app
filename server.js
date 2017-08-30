@@ -12,7 +12,7 @@ var config = {
     database:'anithamuthaiya',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password:db-anithamuthaiya-50927
+    password:process.env.DB_PASSWORD
 };
 
 

@@ -16,7 +16,7 @@ var config = {
 };
 
 
-var app = express();
+//var app = express();
 var articles={ 
     'article-one':{
     title: 'articleone/Anitha',

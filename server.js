@@ -258,6 +258,11 @@ app.get('/check_login',function(req,res){
         res.send('you r not logged');
     }
 });
+
+app.get('/logout',function(req,res){
+    delete req.session.auth;
+    res.send(' logged out');
+});
 app.get('/ui/style.css', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });

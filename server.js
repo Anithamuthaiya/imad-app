@@ -236,6 +236,8 @@ pool.query('SELECT * FROM "user" WHERE username = $1', [username], function(err,
             var salt = dbString.split('$')[2];
             var hashedPassword = hash(password, salt);
             if(hashedPassword === dbString){
+                req.sessionauth={userId: result.rows[0].id};
+                
                 res.send('credentials correct!');
             }
             else{
@@ -246,6 +248,15 @@ pool.query('SELECT * FROM "user" WHERE username = $1', [username], function(err,
 
     }
 });
+});
+
+app.get('/check_login',function(req,res){
+    if(req.session && req.session.auth && req.session.authId){
+        res.send('you r logged in',+req.session.auth.userId.toStrin());
+    }
+    else{
+        res.send('you r not logged');
+    }
 });
 app.get('/ui/style.css', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'style.css'));

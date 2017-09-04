@@ -84,7 +84,7 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
     secret: 'someRandomSecretValue',
-    cookie:{maxAge:1000*60*60*24*30}
+    cookie:{maxAge: 1000 * 60 * 60 * 24 * 30}
     
 }));
 
@@ -236,7 +236,7 @@ pool.query('SELECT * FROM "user" WHERE username = $1', [username], function(err,
             var salt = dbString.split('$')[2];
             var hashedPassword = hash(password, salt);
             if(hashedPassword === dbString){
-                req.sessionauth={userId: result.rows[0].id};
+                req.session.auth={userId: result.rows[0].id};
                 
                 res.send('credentials correct!');
             }
